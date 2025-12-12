@@ -64,7 +64,7 @@ async function onSubmit(event: FormSubmitEvent<typeof state>) {
           size="sm"
           @click="loginModal = true"
         >
-          Login
+          Войти в систему
         </UButton>
         <USeparator
           orientation="vertical"
