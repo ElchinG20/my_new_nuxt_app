@@ -29,7 +29,7 @@ async function onSubmit(event: FormSubmitEvent<typeof state>) {
       state.password = ''
     })
     .catch(err => toast.add({
-      title: 'Wrong password',
+      title: 'Неверный пароль',
       description: err.data?.message,
       color: 'error'
     }))
@@ -44,7 +44,7 @@ async function onSubmit(event: FormSubmitEvent<typeof state>) {
     </Head>
     <NuxtLoadingIndicator />
     <UHeader
-      title="Atinotes"
+      title="Elchin GW"
       :toggle="false"
     >
       <template #right>
@@ -73,7 +73,7 @@ async function onSubmit(event: FormSubmitEvent<typeof state>) {
         <UColorModeButton />
         <UButton
           icon="i-simple-icons-github"
-          to="https://github.com/atinux/atinotes"
+          to="https://github.com/ElchinG20"
           target="_blank"
           color="neutral"
           variant="ghost"
@@ -95,7 +95,7 @@ async function onSubmit(event: FormSubmitEvent<typeof state>) {
             @submit="onSubmit"
           >
             <UFormField
-              label="Please enter the admin password"
+              label="Пожалуйста, введите пароль для входа в систему"
               name="password"
             >
               <UInput
@@ -112,7 +112,7 @@ async function onSubmit(event: FormSubmitEvent<typeof state>) {
               color="neutral"
               block
             >
-              Login to edit
+              Войти в систему
             </UButton>
           </UForm>
         </UCard>
